@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-height: 100vh;
+  height: fit-content;
+
+  background-color: black;
+}
+
+.button{
+  border: 1px solid  rgba(101, 101, 101, 0.971);
+  width: 80%;
+  height: fit-content;
+  padding: 1em;
+  margin-top: 2em;
+  border-radius: 0.5em;
+  color: rgb(188, 188, 188);
+  background-color: black;
+}
+.button::placeholder{
+  color: rgb(160, 160, 160);
+}
+.button:focus{
+  color: rgb(188, 188, 188);
+  outline: none;
+  border: 1px solid #1f6feb;
+}
+
+.navbar{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #181c24;
+  height: fit-content;
+  padding-bottom: 2em;
+  position: fixed;
+  top: 0;
+}
+
+.cardContainer{
+  display: grid;
+  width: fit-content;
+  margin: 8em 0;
+  gap: 2em;
+  grid-template-columns: 20em 20em 20em 20em;
+}
+@media only screen and (max-width: 1444px) {
+  .cardContainer{
+    grid-template-columns: 20em 20em 20em;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .cardContainer{
+    grid-template-columns: 20em 20em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cardContainer{
+    grid-template-columns: 20em ;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .cardContainer{
+    grid-template-columns: 1fr ;
+  }
+}
+.card{
   color: white;
+  height: inherit;
+  height: fit-content;
+  background-color:#181c24;
+  display: flex;
+  align-items: center;
+  padding: 0 1em;
+  overflow: hidden;
+  border-radius: 0.2em;
+}
+.userName{
+  cursor: pointer;
+  
+}
+.userName:hover{
+  text-decoration: underline;
 }
 
-.App-link {
-  color: #61dafb;
+.userAvatar{
+  cursor: pointer;
+  object-fit: contain;
+  height: 6em;
+  width: 6em;
+  padding: 1em;
+  margin-right: 3em;
+  border-radius: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.link{
+  text-decoration: none;
+  color: white;
+  overflow: hidden;
 }
