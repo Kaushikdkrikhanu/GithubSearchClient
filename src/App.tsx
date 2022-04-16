@@ -3,7 +3,7 @@ import axios from 'axios';
 import './App.css';
 import debounce from 'lodash.debounce';
 
-const baseURL= 'http://githubusersearch-env.eba-rtqyhpjt.us-west-1.elasticbeanstalk.com'
+const baseURL= '//githubusersearch-env.eba-rtqyhpjt.us-west-1.elasticbeanstalk.com'
 const API = axios.create({baseURL: baseURL})
 interface User{
   name: string,
