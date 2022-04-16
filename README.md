@@ -16,6 +16,6 @@ http://githubusersearch-env.eba-rtqyhpjt.us-west-1.elasticbeanstalk.com/
 
 
 
-### "Documentation"
+### Documentation
 http://githubusersearch-env.eba-rtqyhpjt.us-west-1.elasticbeanstalk.com/api-docs
 
